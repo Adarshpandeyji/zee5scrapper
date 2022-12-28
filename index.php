@@ -1,9 +1,5 @@
 <?php
 
-// Don't Edit , any problems 
-// ©  @Avishkatpatil [ TG ]
-// Star This Repo
-
 $url =$_GET['c'];
 if($url !=""){
 $id = end(explode('/', $url));
@@ -61,7 +57,7 @@ header("Content-Type: application/json");
 $errr= array("error" => "Put Here Only ZEE5 Proper URL ,  Invalid Input " );
 $err =json_encode($errr);
 
-$apii = array("title" => $title, "description" => $des,  "Release" => $release, "language" => $lang, "genre" => $gen.",".$gen1 , "thumbnail" => $img, "portrait" => $pro, "actor" => $actor, "drm_key" => $drmkey, "video_url" => $hls, "dash" => $dash, "subtitle_url" => $sub, "created_by" => "Avishkar Patil");
+$apii = array("title" => $title, "description" => $des,  "Release" => $release, "language" => $lang, "genre" => $gen.",".$gen1 , "thumbnail" => $img, "portrait" => $pro, "actor" => $actor, "drm_key" => $drmkey, "video_url" => $hls, "dash" => $dash, "subtitle_url" => $sub);
 
 $api =json_encode($apii, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT);
 
@@ -76,6 +72,5 @@ echo $api;
 else{
   header("Content-Type: application/json");
   echo "Hello There Is Problem In Your Link Or Check Your Link Format !!";
-  // © Avishkar Patil 
 }
 ?>
