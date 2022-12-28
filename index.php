@@ -3,7 +3,7 @@
 $url =$_GET['c'];
 if($url !=""){
 $id = end(explode('/', $url));
-$tlink ="https://gwapi.zee5.com/content/details/$id?translation=en&country=IN&version=2";
+$tlink ="https://apiv2.sonyliv.com/AGL/3.0/A/ENG/MWEB/IN/JH/CONTENT/VIDEOURL/VOD/$url/freepreview";
 $tokenurl =file_get_contents("https://useraction.zee5.com/token/platform_tokens.php?platform_name=web_app");
 $tok =json_decode($tokenurl, true);
 $token =$tok['token'];
