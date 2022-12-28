@@ -8,11 +8,6 @@ $tokenurl =file_get_contents("https://useraction.zee5.com/token/platform_tokens.
 $tok =json_decode($tokenurl, true);
 $token =$tok['token'];
 
-$vtok =file_get_contents("http://useraction.zee5.com/tokennd/");
-$vtokn =json_decode($vtok, true);
-$vtoken =$vtokn['video_token'];
-
-
 $curl = curl_init();
 curl_setopt_array($curl, array(
   CURLOPT_URL => $tlink,
