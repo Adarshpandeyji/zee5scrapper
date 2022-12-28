@@ -21,7 +21,7 @@ curl_setopt_array($curl, array(
   CURLOPT_FOLLOWLOCATION => true,
   CURLOPT_CUSTOMREQUEST => "GET",
   CURLOPT_HTTPHEADER => array(
-    "x-access-token: $token",
+    "Security_Token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjgzMDc2IiwiZW1haWwiOiJzcG5zcjRtZUBnbWFpbC5jb20iLCJ0aW1lc3RhbXAiOjE2NzIyMDQyMDd9.C1fEkf-J5SVkojBPGTLqgUSHKjpF30zlGpYL3VLhtNI",
     "Content-Type: application/json"
   ),
 ));
